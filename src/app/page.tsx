@@ -1,6 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Box, Flex } from "./components";
 
 export default function Home() {
-  return;
+  return (
+    <Flex height="100vh" alignItems="center" justifyContent="center">
+      <Box>Hello!</Box>
+    </Flex>
+  );
 }
