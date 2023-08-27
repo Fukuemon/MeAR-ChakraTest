@@ -1,9 +1,10 @@
 import { Box, Flex } from "./components";
+import { DynamicModelViewer } from "./components/ModelViewer/DynamicModel";
 
 export default function Home() {
   return (
-    <Flex height="100vh" alignItems="center" justifyContent="center">
-      <Box>Hello!</Box>
-    </Flex>
+    <Box>
+      <DynamicModelViewer src="/4ステーキコンボ.glb" />
+    </Box>
   );
 }
