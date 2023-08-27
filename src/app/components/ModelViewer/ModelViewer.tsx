@@ -33,11 +33,11 @@ const ModelViewer: FC<ModelViewerProps> = ({ src }) => {
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 600) {
-        setStyle({ width: "100%", height: "300px" });
+        setStyle({ width: "100%", height: "200px" });
       } else if (window.innerWidth < 900) {
-        setStyle({ width: "100%", height: "600px" });
+        setStyle({ width: "100%", height: "300px" });
       } else {
-        setStyle({ width: "100%", height: "400px" });
+        setStyle({ width: "100%", height: "300px" });
       }
     }
 

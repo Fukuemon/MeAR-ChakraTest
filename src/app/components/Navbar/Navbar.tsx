@@ -26,10 +26,10 @@ export const Navbar: FC<NavbarProps> = ({ title }) => {
   return (
     <header>
       <Flex
-        minWidth={"max-content"}
-        alignItems={"center"}
-        gap={"2"}
-        p={8}
+        as={"nav"}
+        align={"center"}
+        justify={"space-between"}
+        p={{ base: 3, md: 4 }}
         borderBottom={"1px solid #e2e8f0"}
         bg={"yellow.50"}
       >
@@ -37,6 +37,9 @@ export const Navbar: FC<NavbarProps> = ({ title }) => {
           <Heading size="md">{title}</Heading>
         </Box>
         <Spacer />
+        <Box p={2}>
+          <Heading size="md">投稿ページ</Heading>
+        </Box>
         <Box>
           {flag ? (
             <Button onClick={changeFlag} bg={"red.300"} colorScheme="teal">
@@ -47,7 +50,7 @@ export const Navbar: FC<NavbarProps> = ({ title }) => {
               <PopoverTrigger>
                 <Avatar src="" />
               </PopoverTrigger>
-              <PopoverContent>
+              <PopoverContent w={"100"} bg={"white"}>
                 <Stack>
                   <Button onClick={changeFlag}>Logout</Button>
                 </Stack>
